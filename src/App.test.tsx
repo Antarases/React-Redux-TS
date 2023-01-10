@@ -1,15 +1,21 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event'
 import { Provider } from 'react-redux';
 import { store } from './app/store';
+
 import App from './App';
 
-test('renders learn react link', () => {
-  const { getByText } = render(
-    <Provider store={store}>
-      <App />
-    </Provider>
-  );
+test('renders learn react link', async () => {
+    const { getByText } = render(
+        <Provider store={store}>
+            <App />
+        </Provider>
+    );
 
-  expect(getByText(/learn/i)).toBeInTheDocument();
+    const user = userEvent.setup();
+
+    // verify page content for expected route after navigating
+    await user.click(screen.getByText(/^Counter$/i));
+    expect(getByText(/learn/i)).toBeInTheDocument();
 });

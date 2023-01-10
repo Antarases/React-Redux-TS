@@ -1,0 +1,74 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Title 1",
+      "body": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "Title 2",
+      "body": "typicode"
+    },
+    {
+      "id": 3,
+      "title": "Title 3",
+      "body": "typicode"
+    },
+    {
+      "id": 4,
+      "title": "Title 4",
+      "body": "typicode"
+    },
+    {
+      "id": 5,
+      "title": "Title 5",
+      "body": "typicode"
+    },
+    {
+      "id": 6,
+      "title": "Title 6",
+      "body": "typicode"
+    },
+    {
+      "id": 7,
+      "title": "Title 7",
+      "body": "typicode"
+    },
+    {
+      "id": 8,
+      "title": "Title 8",
+      "body": "typicode"
+    },
+    {
+      "id": 9,
+      "title": "Title 9",
+      "body": "typicode"
+    },
+    {
+      "id": 10,
+      "title": "Title 10",
+      "body": "typicode"
+    },
+    {
+      "title": "qwe",
+      "body": "qwe",
+      "id": 11
+    },
+    {
+      "title": "asd",
+      "body": "asd",
+      "id": 12
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
